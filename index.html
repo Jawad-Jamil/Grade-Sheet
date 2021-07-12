@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Informations</title>
+    <link rel="shortcut icon" href="https://www.colorcombos.com/images/colors/FF3C00.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <h2 id="heading">Submit Your numbers</h2>
+      <div class="Information_wrapper">
+        <div class="info">
+                <form action="#" name="datas">
+                 <label for="bangla">bangla</label>
+                <input type="number" name="bangla" id="bangla" placeholder="Type Your number">
+
+                <label for="english">english</label>
+                <input type="number" name="english" id="english" placeholder="Type Your number">
+
+                <label for="physics">physics</label>
+                <input type="number" name="physics" id="physics" placeholder="Type Your number">
+
+                <label for="biology">biology</label>
+                <input type="number" name="biology" id="biology" placeholder="Type Your number">
+
+                <label for="chemistry">chemistry</label>
+                <input type="number" name="chemistry" id="chemistry" placeholder="Type Your number">
+
+                <label for="religion">religion</label>
+                <input type="number" name="religion" id="religion" placeholder="Type Your number">
+
+                <button onclick="document.getElementById('result').style.display='inline-block',grading_bang(datas.bangla.value) , grading_eng(datas.english.value),  grading_phy(datas.physics.value),  grading_bio(datas.biology.value),  grading_che(datas.chemistry.value),  grading_reli(datas.religion.value)" type="button">Submit</button>
+                </form>
+        </div>
+
+        <div id="result" class="result">
+           <h3 align="center">Results</h3>
+
+           <div id="h4_results" class="h4_results">
+           <h4 id="res_heading_bang"></h4>
+           <h4 id="res_heading_eng"></h4>
+           <h4 id="res_heading_phy"></h4>
+           <h4 id="res_heading_bio"></h4>
+           <h4 id="res_heading_che"></h4>
+           <h4 id="res_heading_reli"></h4>
+         </div>
+        </div>
+
+     </div>
+   </div>
+
+   
+   
+   <script src="custom.js"></script>
+</body>
+</html>
